@@ -1,5 +1,5 @@
 Rails.application.routes.draw do
-  resources :users, only: [:new, :show]
+  resources :users, only: [:new, :show, :create]
   # get '/signup' => "users#new"
   # post '/signup' => "users#create"
   get '/' => "users#welcome"
