@@ -4,7 +4,6 @@ class SessionsController < ApplicationController
   end
 
   def create
-    binding.pry
     user = User.find_by(name: params[:user][:name])
     user.password = params[:user][:password]
     if user && user.password == params[:user][:password]
