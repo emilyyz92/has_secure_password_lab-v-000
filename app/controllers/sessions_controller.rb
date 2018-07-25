@@ -13,6 +13,5 @@ class SessionsController < ApplicationController
       return head(:forbidden)
       redirect_to login_path
     end
-    end
   end
 end
